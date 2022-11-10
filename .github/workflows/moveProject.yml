@@ -6,7 +6,7 @@ on:
 
 jobs:
   move-to-in-progress:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     name: Move to In Progress Column
     steps:
       - name: Checkout
