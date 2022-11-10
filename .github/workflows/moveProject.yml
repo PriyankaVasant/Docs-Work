@@ -14,6 +14,6 @@ jobs:
        - name: Move Issues to Column
         uses: kin/gh-action-move-issues-to-column@v1.0
  	with:
-	access-token: "#{{ secrets.GITHUB_TOKEN }}"
-	project-name: "My Project"
-	target-column: "In Progress"
+		access-token: "#{{ secrets.GITHUB_TOKEN }}"
+		project-name: "My Project"
+		target-column: "In Progress"
