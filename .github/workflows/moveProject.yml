@@ -16,5 +16,4 @@ jobs:
        with:
           project-name:: "Docs-Work"
           target-column: "In Progress"
-          access-token: "#{{ secrets.GITHUB_TOKEN }}"
-	  
+          access-token: "#{{ secrets.GITHUB_TOKEN }}"	  
