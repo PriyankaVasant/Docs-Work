@@ -5,13 +5,10 @@ on:
       - assigned
 jobs:
   move-assigned-card:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Move to In Progress
-      uses: kin/gh-action-move-issue-to-column@1.0
-       with:
-          project-name:: "Docs-Work"
-          target-column: "In Progress"
-          access-token: "#{{ secrets.GITHUB_TOKEN }}"	  
+      - uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
+        with:
+          project: Docs-Work
+          column: In Progress
+          access-token: "#{{ secrets.GITHUB_TOKEN }}"
