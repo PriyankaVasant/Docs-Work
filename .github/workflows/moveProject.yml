@@ -1,14 +1,12 @@
-name: Assigned Issues Are In Progress
-
+name: Move assigned card
 on:
-  issue:
-    types: [assigned]
-
+  issues:
+    types:
+      - assigned
 jobs:
-  move-to-in-progress:
-    runs-on: macos-latest
-    name: Move to In Progress Column
-  steps:
+  move-assigned-card:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Move to In Progress
