@@ -15,5 +15,7 @@ jobs:
       uses: kin/gh-action-move-issue-to-column@1.0
        with:
           project-name:: "Docs-Work"
-	 access-token: "#{{ secrets.GITHUB_TOKEN }}"
-	 target-column: "In Progress"
+	  project: Docs Work
+          target-column: "In Progress"
+          access-token: "#{{ secrets.GITHUB_TOKEN }}"
+	  
