@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Move to In Progress
-        uses: kin/gh-action-move-issue-to-column@1.0
+      - name: Move Issues to Column
+        uses: kin/gh-action-move-issues-to-column@v1.0
         with:
           access-token: "#{{ secrets.DOCS_API_KEY }}"
           project-name: "Backlog"
