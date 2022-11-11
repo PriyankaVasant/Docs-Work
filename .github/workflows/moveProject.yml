@@ -5,7 +5,7 @@ on:
 
 jobs:
   move-to-in-progress:
-    runs-on: ubuntu-latest
+    runs-on: MACOS-latest
     name: Move to In Progress Column
     steps:
       - name: Checkout
@@ -13,6 +13,6 @@ jobs:
       - name: Move to In Progress
         uses: kin/gh-action-move-issue-to-column@1.0
         with:
-          access-token: "#{{ secrets.GITHUB_TOKEN }}"
-          project-name: "My Project"
+          access-token: "#{{ secrets.DOCS_API_KEY }}"
+          project-name: "Backlog"
           target-column: "In Progress"
